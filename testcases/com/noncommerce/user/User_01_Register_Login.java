@@ -1,6 +1,10 @@
 package com.noncommerce.user;
 
 import org.testng.annotations.Test;
+
+import baseObject.HomePageObject;
+import baseObject.RegisterPageObject;
+
 import org.testng.annotations.BeforeClass;
 import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
@@ -28,50 +32,50 @@ public class User_01_Register_Login extends AbstractPage{
 	}
   @Test
   public void Re_01_EmptyData() {
-	  clickToElement(driver, "//a[@class='ico-register']");
-	  areJqueryandJsLoadSuccess(driver);
-	  clickToElement(driver, "//button[@id='register-button']");
+	  HomePageObject.clickToElement(driver, "//a[@class='ico-register']");
+	  RegisterPageObject.areJqueryandJsLoadSuccess(driver);
+	  RegisterPageObject.clickToElement(driver, "//button[@id='register-button']");
 	  sleepInSecond(2);
-	  AssertJUnit.assertEquals(getElementText(driver, "//span[@id='FirstName-error']"), "First name is required.");
-	  AssertJUnit.assertEquals(getElementText(driver, "//span[@id='LastName-error']"), "Last name is required.");
-	  AssertJUnit.assertEquals(getElementText(driver, "//span[@id='Email-error']"), "Email is required.");
-	  AssertJUnit.assertEquals(getElementText(driver, "//span[@id='Password-error']"), "Password is required.");
-	  AssertJUnit.assertEquals(getElementText(driver, "//span[@id='ConfirmPassword-error']"), "Password is required.");
+	  AssertJUnit.assertEquals(RegisterPageObject.getElementText(driver, "//span[@id='FirstName-error']"), "First name is required.");
+	  AssertJUnit.assertEquals(RegisterPageObject.getElementText(driver, "//span[@id='LastName-error']"), "Last name is required.");
+	  AssertJUnit.assertEquals(RegisterPageObject.getElementText(driver, "//span[@id='Email-error']"), "Email is required.");
+	  AssertJUnit.assertEquals(RegisterPageObject.getElementText(driver, "//span[@id='Password-error']"), "Password is required.");
+	  AssertJUnit.assertEquals(RegisterPageObject.getElementText(driver, "//span[@id='ConfirmPassword-error']"), "Password is required.");
   }
   @Test
   public void Re_02_InvalidEmail() {
-	  sendKeyToElement(driver, "//input[@id='Email']", "tesst");
+	  RegisterPageObject.sendKeyToElement(driver, "//input[@id='Email']", "tesst");
 	  sleepInSecond(2);
-	  AssertJUnit.assertEquals(getElementText(driver, "//span[@id='Email-error']"), "Wrong email");
+	  AssertJUnit.assertEquals(RegisterPageObject.getElementText(driver, "//span[@id='Email-error']"), "Wrong email");
   }
   @Test
   public void Re_03_ValidData() {
-	  sendKeyToElement(driver, "//input[@id='FirstName']", firstName);
-	  sendKeyToElement(driver, "//input[@id='LastName']", lastName);
-	  sendKeyToElement(driver, "//input[@id='Email']", email);
-	  sendKeyToElement(driver, "//input[@id='Password']", password);
-	  sendKeyToElement(driver, "//input[@id='ConfirmPassword']", password);
-	  clickToElement(driver, "//button[@id='register-button']");
-	  waitForAllElementVisible(driver, "//div[@class='result']");
-	  AssertJUnit.assertEquals(getElementText(driver, "//div[@class='result']"), "Your registration completed");
-	  clickToElement(driver, "//a[@class='ico-logout']");
+	  RegisterPageObject.sendKeyToElement(driver, "//input[@id='FirstName']", firstName);
+	  RegisterPageObject.sendKeyToElement(driver, "//input[@id='LastName']", lastName);
+	  RegisterPageObject.sendKeyToElement(driver, "//input[@id='Email']", email);
+	  RegisterPageObject.sendKeyToElement(driver, "//input[@id='Password']", password);
+	  RegisterPageObject.sendKeyToElement(driver, "//input[@id='ConfirmPassword']", password);
+	  RegisterPageObject.clickToElement(driver, "//button[@id='register-button']");
+	  RegisterPageObject.waitForAllElementVisible(driver, "//div[@class='result']");
+	  AssertJUnit.assertEquals(RegisterPageObject.getElementText(driver, "//div[@class='result']"), "Your registration completed");
+	  RegisterPageObject.clickToElement(driver, "//a[@class='ico-logout']");
   }
   @Test
   public void Re_04_PasswordLessThan6() {
-	  clickToElement(driver, "//a[@class='ico-register']");
-	  areJqueryandJsLoadSuccess(driver);
-	  sendKeyToElement(driver, "//input[@id='Password']", "123");
-	  clickToElement(driver, "//button[@id='register-button']");
+	  HomePageObject.clickToElement(driver, "//a[@class='ico-register']");
+	  RegisterPageObject.areJqueryandJsLoadSuccess(driver);
+	  RegisterPageObject.sendKeyToElement(driver, "//input[@id='Password']", "123");
+	  RegisterPageObject.clickToElement(driver, "//button[@id='register-button']");
 	  sleepInSecond(1);
-	  AssertJUnit.assertTrue(getElementText(driver, "//span[@id='Password-error']").contains("Password must meet the following rules:"));
+	  AssertJUnit.assertTrue(RegisterPageObject.getElementText(driver, "//span[@id='Password-error']").contains("Password must meet the following rules:"));
   }
   @Test
   public void Re_05_ConfirmPasswordInvalid() {
-	  sendKeyToElement(driver, "//input[@id='Password']", password);
-	  sendKeyToElement(driver, "//input[@id='ConfirmPassword']", "123567");
-	  clickToElement(driver, "//button[@id='register-button']");
+	  RegisterPageObject.sendKeyToElement(driver, "//input[@id='Password']", password);
+	  RegisterPageObject.sendKeyToElement(driver, "//input[@id='ConfirmPassword']", "123567");
+	  RegisterPageObject.clickToElement(driver, "//button[@id='register-button']");
 	  sleepInSecond(1);
-	  AssertJUnit.assertEquals(getElementText(driver, "//span[@id='ConfirmPassword-error']"), "The password and confirmation password do not match.");
+	  AssertJUnit.assertEquals(RegisterPageObject.getElementText(driver, "//span[@id='ConfirmPassword-error']"), "The password and confirmation password do not match.");
   }
   @AfterClass
   public void AfterClass() {

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Noncommerce_BuildingFramework">
+  <test name="Run on Firefox">
+  <parameter name="browser" value="firefox"/>
+  <parameter name="environment" value="DEV"/>
+  </test>
+  <test name="Run on Chrome">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="environment" value="DEV"/>
+  </test>
+  <test name="Run on Edge">
+  <parameter name="browser" value="edge"/>
+  <parameter name="environment" value="DEV"/>
+  </test>
+   <packages>
+   	<package name="com.noncommerce.user"/>
+   	<package name="com.noncommerce.admin"/>
+   	<package name="runTestcase"/>
+   </packages> 
+</suite> 
