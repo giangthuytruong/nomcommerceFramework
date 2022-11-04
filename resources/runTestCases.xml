@@ -1,20 +1,21 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Noncommerce_BuildingFramework">
   <test name="Run on Firefox">
   <parameter name="browser" value="firefox"/>
-  <parameter name="environment" value="DEV"/>
+  <classes>
+  	<class name="com.noncommerce.user.User_01_Register_Login"/>
+  </classes>
   </test>
   <test name="Run on Chrome">
   <parameter name="browser" value="chrome"/>
-  <parameter name="environment" value="DEV"/>
+  <classes>
+  	<class name="com.noncommerce.user.User_03_My_Account"/>
+  </classes>
   </test>
   <test name="Run on Edge">
   <parameter name="browser" value="edge"/>
-  <parameter name="environment" value="DEV"/>
+  <classes>
+  	<class name="com.noncommerce.user.User_03_My_Account"/>
+  </classes>
   </test>
-   <packages>
-   	<package name="com.noncommerce.user"/>
-   	<package name="com.noncommerce.admin"/>
-   	<package name="runTestcase"/>
-   </packages> 
 </suite> 
