@@ -61,7 +61,7 @@ public class User_03_My_Account extends BaseTest {
 		String dateOfBirth="1";
 		String monthOfBirth="1";
 		String yearOfBirth="1914";
-		customerpage=(CustomerInfoPageObject) myaccountpage.openDynamicSideBarlink(driver, "customer-info active");
+		customerpage=(CustomerInfoPageObject) myaccountpage.openPageAtMyAccountByName(driver, "customer-info active");
 		customerpage.sendKeyToFirstName(firstNameUpdate);
 		customerpage.sendKeyToLastName(lastNameUpdate);
 		customerpage.selectDay(dateOfBirth);
@@ -86,7 +86,7 @@ public class User_03_My_Account extends BaseTest {
 		String postalCode="550000";
 		String phoneNumber="0123456789";
 		String faxNumber="0987654321";
-		addresspage=(AddressPageObject)customerpage.openDynamicSideBarlink(driver, "customer-addresses inactive");
+		addresspage=(AddressPageObject)customerpage.openPageAtMyAccountByName(driver, "customer-addresses inactive");
 		addresspage.clickToAddButton();
 		addresspage.sendKeyToFirstName(firstNameUpdate);
 		addresspage.sendKeyToLastName(lastNameUpdate);
@@ -112,7 +112,7 @@ public class User_03_My_Account extends BaseTest {
 	}
 	@Test
 	public void My_Acc_03_Change_Password() {
-		changePasswordPage=(ChangePasswordPageObject)addresspage.openDynamicSideBarlink(driver, "change-password inactive");
+		changePasswordPage=(ChangePasswordPageObject)addresspage.openPageAtMyAccountByName(driver, "change-password inactive");
 		changePasswordPage.sendKeyToOldPassword(password);
 		changePasswordPage.sendKeyToNewPassword(newPassword);
 		changePasswordPage.sendKeyToConfirmPassword(newPassword);
@@ -140,7 +140,7 @@ public class User_03_My_Account extends BaseTest {
 		productReview.clickRating();
 		productReview.clickToSubmitButton();
 		myaccountpage=productReview.clickToMyAccountLink(driver);
-		myProductReviewPage=(MyProductReviewPageObject)myaccountpage.openDynamicSideBarlink(driver, "customer-reviews inactive");
+		myProductReviewPage=(MyProductReviewPageObject)myaccountpage.openPageAtMyAccountByName(driver, "customer-reviews inactive");
 		Assert.assertEquals(myProductReviewPage.getReviewTitle(), reviewTitle);
 		Assert.assertEquals(myProductReviewPage.getReviewText(), reviewText);
 	}

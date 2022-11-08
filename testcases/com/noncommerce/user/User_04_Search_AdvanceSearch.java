@@ -29,13 +29,13 @@ public class User_04_Search_AdvanceSearch extends BaseTest {
 		homepage= PageGeneratorManager.openHomePage(driver);
 		registerpage= homepage.clickToRegisterLink();
 		registerpage.sendKeyToFirstname(firstName);
-		  registerpage.sendKeyToLastname(lastName);
-		  registerpage.sendKeyToEmail(registerpage.email);
-		  registerpage.sendKeyToPassword(password);
-		  registerpage.sendKeyToConfirmationPassword(password);
-		  registerpage.clickToRegisterButton();
-		  Assert.assertEquals(registerpage.getRegistrationResultMessage(), "Your registration completed");
-		  searchpage=registerpage.clickToSearchLink(driver);
+		registerpage.sendKeyToLastname(lastName);
+		registerpage.sendKeyToEmail(registerpage.email);
+		registerpage.sendKeyToPassword(password);
+		registerpage.sendKeyToConfirmationPassword(password);
+		registerpage.clickToRegisterButton();
+		Assert.assertEquals(registerpage.getRegistrationResultMessage(), "Your registration completed");
+		searchpage=registerpage.clickToSearchLink(driver);
 	}
 	@Test
 	public void Search_01_Empty_Data() {

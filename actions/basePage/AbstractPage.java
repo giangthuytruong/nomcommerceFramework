@@ -340,7 +340,7 @@ public class AbstractPage {
 		WebDriverWait explicityWait=new WebDriverWait(driver, timeOut);
 		explicityWait.until(ExpectedConditions.alertIsPresent());
 	}
-	public AbstractPage openDynamicSideBarlink(WebDriver driver, String pageName) {
+	public AbstractPage openPageAtMyAccountByName(WebDriver driver, String pageName) {
 		waitForElementClickable(driver, AbstractPageUI.SIDEBAR_LINK, pageName);
 		clickToElement(driver, AbstractPageUI.SIDEBAR_LINK, pageName);
 		switch(pageName) {
@@ -361,13 +361,19 @@ public class AbstractPage {
 		case "customer-reviews inactive":
 			return PageGeneratorManager.getToMyProductReviewLink(driver);
 		default:
-		return null;
+			throw new RuntimeException("Invalid page name at My account area.");
 		}
 	}
 	public HomePageObject clickToLogoutLink(WebDriver driver) {
 		waitForElementClickable(driver, castRestParameter(HomepageUI.MENU_LINK, "ico-logout"));
 		clickByJs(driver, castRestParameter(HomepageUI.MENU_LINK, "ico-logout"));
 		return PageGeneratorManager.getToLogoutLink(driver);
+	}
+	public HomePageObject openHomepage(WebDriver driver) {
+		waitForElementClickable(driver, AbstractPageUI.HOMEPAGE_LINK);
+		clickToElement(driver, null, null);
+		return null;
+		
 	}
 	public MyAccountObject clickToMyAccountLink(WebDriver driver) {
 		// TODO Auto-generated method stub
