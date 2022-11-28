@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="13" passed="8" failed="0" skipped="5">
+<testng-results ignored="0" total="15" passed="10" failed="0" skipped="5">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-21T04:49:59Z" name="Noncommerce_BuildingFramework" finished-at="2022-10-21T04:50:56Z" duration-ms="57604">
+  <suite started-at="2022-11-11T04:22:06Z" name="Noncommerce_BuildingFramework" finished-at="2022-11-11T04:23:18Z" duration-ms="72261">
     <groups>
     </groups>
-    <test started-at="2022-10-21T04:49:59Z" name="Run on Firefox" finished-at="2022-10-21T04:50:23Z" duration-ms="24678">
-      <class name="com.noncommerce.user.User_01_Register_Login">
-        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.noncommerce.user.User_01_Register_Login@20f5239f]" started-at="2022-10-21T04:49:59Z" name="beforeClass" finished-at="2022-10-21T04:50:23Z" duration-ms="24656" status="FAIL">
+    <test started-at="2022-11-11T04:22:06Z" name="Run on Firefox" finished-at="2022-11-11T04:22:31Z" duration-ms="24708">
+      <class name="com.noncommerce.user.User_06_Wishlist_Compare_RecentView">
+        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.noncommerce.user.User_06_Wishlist_Compare_RecentView@6d3a388c]" started-at="2022-11-11T04:22:06Z" name="beforeClass" finished-at="2022-11-11T04:22:31Z" duration-ms="24687" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -17,13 +17,13 @@
           </params>
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[org.apache.http.conn.HttpHostConnectException: Connect to localhost:28525 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+              <![CDATA[org.apache.http.conn.HttpHostConnectException: Connect to localhost:39974 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
 Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:54:15.039Z'
 System info: host: 'ADMIN', ip: '192.168.1.46', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
 Driver info: driver.version: FirefoxDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connect to localhost:28525 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+              <![CDATA[org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connect to localhost:39974 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
 Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:54:15.039Z'
 System info: host: 'ADMIN', ip: '192.168.1.46', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
 Driver info: driver.version: FirefoxDriver
@@ -36,7 +36,7 @@ at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:191)
 at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:103)
 at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:99)
 at basePage.BaseTest.getBrowserDriver(BaseTest.java:17)
-at com.noncommerce.user.User_01_Register_Login.beforeClass(User_01_Register_Login.java:29)
+at com.noncommerce.user.User_06_Wishlist_Compare_RecentView.beforeClass(User_06_Wishlist_Compare_RecentView.java:29)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -63,7 +63,7 @@ at org.testng.TestNG.run(TestNG.java:1017)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:28525 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:39974 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
 at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
 at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:359)
 at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
@@ -98,16 +98,16 @@ at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(Default
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="Re_01_EmptyData()[pri:0, instance:com.noncommerce.user.User_01_Register_Login@20f5239f]" started-at="2022-10-21T04:50:23Z" name="Re_01_EmptyData" finished-at="2022-10-21T04:50:23Z" duration-ms="0" status="SKIP">
+        <test-method signature="TC_01_AddToWishlist()[pri:0, instance:com.noncommerce.user.User_06_Wishlist_Compare_RecentView@6d3a388c]" started-at="2022-11-11T04:22:31Z" name="TC_01_AddToWishlist" finished-at="2022-11-11T04:22:31Z" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[org.apache.http.conn.HttpHostConnectException: Connect to localhost:28525 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+              <![CDATA[org.apache.http.conn.HttpHostConnectException: Connect to localhost:39974 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
 Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:54:15.039Z'
 System info: host: 'ADMIN', ip: '192.168.1.46', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
 Driver info: driver.version: FirefoxDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connect to localhost:28525 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+              <![CDATA[org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connect to localhost:39974 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
 Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:54:15.039Z'
 System info: host: 'ADMIN', ip: '192.168.1.46', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
 Driver info: driver.version: FirefoxDriver
@@ -120,7 +120,7 @@ at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:191)
 at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:103)
 at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:99)
 at basePage.BaseTest.getBrowserDriver(BaseTest.java:17)
-at com.noncommerce.user.User_01_Register_Login.beforeClass(User_01_Register_Login.java:29)
+at com.noncommerce.user.User_06_Wishlist_Compare_RecentView.beforeClass(User_06_Wishlist_Compare_RecentView.java:29)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -147,7 +147,7 @@ at org.testng.TestNG.run(TestNG.java:1017)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:28525 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:39974 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
 at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
 at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:359)
 at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
@@ -181,17 +181,17 @@ at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(Default
           </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Re_01_EmptyData -->
-        <test-method signature="Re_02_InvalidEmail()[pri:0, instance:com.noncommerce.user.User_01_Register_Login@20f5239f]" started-at="2022-10-21T04:50:23Z" name="Re_02_InvalidEmail" finished-at="2022-10-21T04:50:23Z" duration-ms="0" status="SKIP">
+        </test-method> <!-- TC_01_AddToWishlist -->
+        <test-method signature="TC_02_AddProductToCart()[pri:0, instance:com.noncommerce.user.User_06_Wishlist_Compare_RecentView@6d3a388c]" started-at="2022-11-11T04:22:31Z" name="TC_02_AddProductToCart" finished-at="2022-11-11T04:22:31Z" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[org.apache.http.conn.HttpHostConnectException: Connect to localhost:28525 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+              <![CDATA[org.apache.http.conn.HttpHostConnectException: Connect to localhost:39974 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
 Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:54:15.039Z'
 System info: host: 'ADMIN', ip: '192.168.1.46', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
 Driver info: driver.version: FirefoxDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connect to localhost:28525 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+              <![CDATA[org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connect to localhost:39974 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
 Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:54:15.039Z'
 System info: host: 'ADMIN', ip: '192.168.1.46', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
 Driver info: driver.version: FirefoxDriver
@@ -204,7 +204,7 @@ at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:191)
 at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:103)
 at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:99)
 at basePage.BaseTest.getBrowserDriver(BaseTest.java:17)
-at com.noncommerce.user.User_01_Register_Login.beforeClass(User_01_Register_Login.java:29)
+at com.noncommerce.user.User_06_Wishlist_Compare_RecentView.beforeClass(User_06_Wishlist_Compare_RecentView.java:29)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -231,7 +231,7 @@ at org.testng.TestNG.run(TestNG.java:1017)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:28525 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:39974 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
 at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
 at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:359)
 at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
@@ -265,17 +265,17 @@ at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(Default
           </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Re_02_InvalidEmail -->
-        <test-method signature="Re_03_ValidData()[pri:0, instance:com.noncommerce.user.User_01_Register_Login@20f5239f]" started-at="2022-10-21T04:50:23Z" name="Re_03_ValidData" finished-at="2022-10-21T04:50:23Z" duration-ms="0" status="SKIP">
+        </test-method> <!-- TC_02_AddProductToCart -->
+        <test-method signature="TC_03_RemoveProductInWishlist()[pri:0, instance:com.noncommerce.user.User_06_Wishlist_Compare_RecentView@6d3a388c]" started-at="2022-11-11T04:22:31Z" name="TC_03_RemoveProductInWishlist" finished-at="2022-11-11T04:22:31Z" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[org.apache.http.conn.HttpHostConnectException: Connect to localhost:28525 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+              <![CDATA[org.apache.http.conn.HttpHostConnectException: Connect to localhost:39974 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
 Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:54:15.039Z'
 System info: host: 'ADMIN', ip: '192.168.1.46', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
 Driver info: driver.version: FirefoxDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connect to localhost:28525 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+              <![CDATA[org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connect to localhost:39974 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
 Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:54:15.039Z'
 System info: host: 'ADMIN', ip: '192.168.1.46', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
 Driver info: driver.version: FirefoxDriver
@@ -288,7 +288,7 @@ at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:191)
 at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:103)
 at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:99)
 at basePage.BaseTest.getBrowserDriver(BaseTest.java:17)
-at com.noncommerce.user.User_01_Register_Login.beforeClass(User_01_Register_Login.java:29)
+at com.noncommerce.user.User_06_Wishlist_Compare_RecentView.beforeClass(User_06_Wishlist_Compare_RecentView.java:29)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -315,7 +315,7 @@ at org.testng.TestNG.run(TestNG.java:1017)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:28525 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:39974 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
 at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
 at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:359)
 at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
@@ -349,17 +349,17 @@ at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(Default
           </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Re_03_ValidData -->
-        <test-method signature="Re_04_PasswordLessThan6()[pri:0, instance:com.noncommerce.user.User_01_Register_Login@20f5239f]" started-at="2022-10-21T04:50:23Z" name="Re_04_PasswordLessThan6" finished-at="2022-10-21T04:50:23Z" duration-ms="0" status="SKIP">
+        </test-method> <!-- TC_03_RemoveProductInWishlist -->
+        <test-method signature="TC_04_AddProductToCompare()[pri:0, instance:com.noncommerce.user.User_06_Wishlist_Compare_RecentView@6d3a388c]" started-at="2022-11-11T04:22:31Z" name="TC_04_AddProductToCompare" finished-at="2022-11-11T04:22:31Z" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[org.apache.http.conn.HttpHostConnectException: Connect to localhost:28525 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+              <![CDATA[org.apache.http.conn.HttpHostConnectException: Connect to localhost:39974 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
 Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:54:15.039Z'
 System info: host: 'ADMIN', ip: '192.168.1.46', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
 Driver info: driver.version: FirefoxDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connect to localhost:28525 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+              <![CDATA[org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connect to localhost:39974 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
 Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:54:15.039Z'
 System info: host: 'ADMIN', ip: '192.168.1.46', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
 Driver info: driver.version: FirefoxDriver
@@ -372,7 +372,7 @@ at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:191)
 at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:103)
 at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:99)
 at basePage.BaseTest.getBrowserDriver(BaseTest.java:17)
-at com.noncommerce.user.User_01_Register_Login.beforeClass(User_01_Register_Login.java:29)
+at com.noncommerce.user.User_06_Wishlist_Compare_RecentView.beforeClass(User_06_Wishlist_Compare_RecentView.java:29)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -399,7 +399,7 @@ at org.testng.TestNG.run(TestNG.java:1017)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:28525 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:39974 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
 at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
 at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:359)
 at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
@@ -433,17 +433,17 @@ at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(Default
           </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Re_04_PasswordLessThan6 -->
-        <test-method signature="Re_05_ConfirmPasswordInvalid()[pri:0, instance:com.noncommerce.user.User_01_Register_Login@20f5239f]" started-at="2022-10-21T04:50:23Z" name="Re_05_ConfirmPasswordInvalid" finished-at="2022-10-21T04:50:23Z" duration-ms="0" status="SKIP">
+        </test-method> <!-- TC_04_AddProductToCompare -->
+        <test-method signature="TC_05_RecentlyViewedProducts()[pri:0, instance:com.noncommerce.user.User_06_Wishlist_Compare_RecentView@6d3a388c]" started-at="2022-11-11T04:22:31Z" name="TC_05_RecentlyViewedProducts" finished-at="2022-11-11T04:22:31Z" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[org.apache.http.conn.HttpHostConnectException: Connect to localhost:28525 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+              <![CDATA[org.apache.http.conn.HttpHostConnectException: Connect to localhost:39974 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
 Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:54:15.039Z'
 System info: host: 'ADMIN', ip: '192.168.1.46', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
 Driver info: driver.version: FirefoxDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connect to localhost:28525 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+              <![CDATA[org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connect to localhost:39974 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
 Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:54:15.039Z'
 System info: host: 'ADMIN', ip: '192.168.1.46', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
 Driver info: driver.version: FirefoxDriver
@@ -456,7 +456,7 @@ at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:191)
 at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:103)
 at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:99)
 at basePage.BaseTest.getBrowserDriver(BaseTest.java:17)
-at com.noncommerce.user.User_01_Register_Login.beforeClass(User_01_Register_Login.java:29)
+at com.noncommerce.user.User_06_Wishlist_Compare_RecentView.beforeClass(User_06_Wishlist_Compare_RecentView.java:29)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -483,7 +483,7 @@ at org.testng.TestNG.run(TestNG.java:1017)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:28525 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:39974 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
 at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
 at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:359)
 at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
@@ -517,16 +517,12 @@ at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(Default
           </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Re_05_ConfirmPasswordInvalid -->
-        <test-method is-config="true" signature="AfterClass()[pri:0, instance:com.noncommerce.user.User_01_Register_Login@20f5239f]" started-at="2022-10-21T04:50:23Z" name="AfterClass" finished-at="2022-10-21T04:50:23Z" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterClass -->
-      </class> <!-- com.noncommerce.user.User_01_Register_Login -->
+        </test-method> <!-- TC_05_RecentlyViewedProducts -->
+      </class> <!-- com.noncommerce.user.User_06_Wishlist_Compare_RecentView -->
     </test> <!-- Run on Firefox -->
-    <test started-at="2022-10-21T04:50:23Z" name="Run on Chrome" finished-at="2022-10-21T04:50:40Z" duration-ms="16598">
-      <class name="com.noncommerce.user.User_03_My_Account">
-        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.noncommerce.user.User_03_My_Account@fa49800]" started-at="2022-10-21T04:50:23Z" name="beforeClass" finished-at="2022-10-21T04:50:29Z" duration-ms="5289" status="PASS">
+    <test started-at="2022-11-11T04:22:31Z" name="Run on Chrome" finished-at="2022-11-11T04:22:55Z" duration-ms="24732">
+      <class name="com.noncommerce.user.User_06_Wishlist_Compare_RecentView">
+        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.noncommerce.user.User_06_Wishlist_Compare_RecentView@1b1426f4]" started-at="2022-11-11T04:22:31Z" name="beforeClass" finished-at="2022-11-11T04:22:36Z" duration-ms="5058" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -537,31 +533,31 @@ at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(Default
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="My_Acc_01_Update_Success()[pri:0, instance:com.noncommerce.user.User_03_My_Account@fa49800]" started-at="2022-10-21T04:50:29Z" name="My_Acc_01_Update_Success" finished-at="2022-10-21T04:50:30Z" duration-ms="1413" status="PASS">
+        <test-method signature="TC_01_AddToWishlist()[pri:0, instance:com.noncommerce.user.User_06_Wishlist_Compare_RecentView@1b1426f4]" started-at="2022-11-11T04:22:36Z" name="TC_01_AddToWishlist" finished-at="2022-11-11T04:22:38Z" duration-ms="2135" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- My_Acc_01_Update_Success -->
-        <test-method signature="My_Acc_02_Add_Address()[pri:0, instance:com.noncommerce.user.User_03_My_Account@fa49800]" started-at="2022-10-21T04:50:30Z" name="My_Acc_02_Add_Address" finished-at="2022-10-21T04:50:33Z" duration-ms="2875" status="PASS">
+        </test-method> <!-- TC_01_AddToWishlist -->
+        <test-method signature="TC_02_AddProductToCart()[pri:0, instance:com.noncommerce.user.User_06_Wishlist_Compare_RecentView@1b1426f4]" started-at="2022-11-11T04:22:38Z" name="TC_02_AddProductToCart" finished-at="2022-11-11T04:22:39Z" duration-ms="1228" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- My_Acc_02_Add_Address -->
-        <test-method signature="My_Acc_03_Change_Password()[pri:0, instance:com.noncommerce.user.User_03_My_Account@fa49800]" started-at="2022-10-21T04:50:33Z" name="My_Acc_03_Change_Password" finished-at="2022-10-21T04:50:36Z" duration-ms="3653" status="PASS">
+        </test-method> <!-- TC_02_AddProductToCart -->
+        <test-method signature="TC_03_RemoveProductInWishlist()[pri:0, instance:com.noncommerce.user.User_06_Wishlist_Compare_RecentView@1b1426f4]" started-at="2022-11-11T04:22:39Z" name="TC_03_RemoveProductInWishlist" finished-at="2022-11-11T04:22:41Z" duration-ms="2413" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- My_Acc_03_Change_Password -->
-        <test-method signature="My_Acc_04_My_Product_Review()[pri:0, instance:com.noncommerce.user.User_03_My_Account@fa49800]" started-at="2022-10-21T04:50:36Z" name="My_Acc_04_My_Product_Review" finished-at="2022-10-21T04:50:39Z" duration-ms="2780" status="PASS">
+        </test-method> <!-- TC_03_RemoveProductInWishlist -->
+        <test-method signature="TC_04_AddProductToCompare()[pri:0, instance:com.noncommerce.user.User_06_Wishlist_Compare_RecentView@1b1426f4]" started-at="2022-11-11T04:22:41Z" name="TC_04_AddProductToCompare" finished-at="2022-11-11T04:22:46Z" duration-ms="4263" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- My_Acc_04_My_Product_Review -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.noncommerce.user.User_03_My_Account@fa49800]" started-at="2022-10-21T04:50:39Z" name="afterClass" finished-at="2022-10-21T04:50:40Z" duration-ms="585" status="PASS">
+        </test-method> <!-- TC_04_AddProductToCompare -->
+        <test-method signature="TC_05_RecentlyViewedProducts()[pri:0, instance:com.noncommerce.user.User_06_Wishlist_Compare_RecentView@1b1426f4]" started-at="2022-11-11T04:22:46Z" name="TC_05_RecentlyViewedProducts" finished-at="2022-11-11T04:22:55Z" duration-ms="9630" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.noncommerce.user.User_03_My_Account -->
+        </test-method> <!-- TC_05_RecentlyViewedProducts -->
+      </class> <!-- com.noncommerce.user.User_06_Wishlist_Compare_RecentView -->
     </test> <!-- Run on Chrome -->
-    <test started-at="2022-10-21T04:50:40Z" name="Run on Edge" finished-at="2022-10-21T04:50:56Z" duration-ms="16289">
-      <class name="com.noncommerce.user.User_03_My_Account">
-        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.noncommerce.user.User_03_My_Account@4efc180e]" started-at="2022-10-21T04:50:40Z" name="beforeClass" finished-at="2022-10-21T04:50:44Z" duration-ms="4400" status="PASS">
+    <test started-at="2022-11-11T04:22:55Z" name="Run on Edge" finished-at="2022-11-11T04:23:18Z" duration-ms="22781">
+      <class name="com.noncommerce.user.User_06_Wishlist_Compare_RecentView">
+        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.noncommerce.user.User_06_Wishlist_Compare_RecentView@67c33749]" started-at="2022-11-11T04:22:55Z" name="beforeClass" finished-at="2022-11-11T04:23:01Z" duration-ms="6009" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -572,27 +568,27 @@ at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(Default
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="My_Acc_01_Update_Success()[pri:0, instance:com.noncommerce.user.User_03_My_Account@4efc180e]" started-at="2022-10-21T04:50:44Z" name="My_Acc_01_Update_Success" finished-at="2022-10-21T04:50:46Z" duration-ms="1420" status="PASS">
+        <test-method signature="TC_01_AddToWishlist()[pri:0, instance:com.noncommerce.user.User_06_Wishlist_Compare_RecentView@67c33749]" started-at="2022-11-11T04:23:01Z" name="TC_01_AddToWishlist" finished-at="2022-11-11T04:23:03Z" duration-ms="2082" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- My_Acc_01_Update_Success -->
-        <test-method signature="My_Acc_02_Add_Address()[pri:0, instance:com.noncommerce.user.User_03_My_Account@4efc180e]" started-at="2022-10-21T04:50:46Z" name="My_Acc_02_Add_Address" finished-at="2022-10-21T04:50:49Z" duration-ms="2951" status="PASS">
+        </test-method> <!-- TC_01_AddToWishlist -->
+        <test-method signature="TC_02_AddProductToCart()[pri:0, instance:com.noncommerce.user.User_06_Wishlist_Compare_RecentView@67c33749]" started-at="2022-11-11T04:23:03Z" name="TC_02_AddProductToCart" finished-at="2022-11-11T04:23:05Z" duration-ms="1256" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- My_Acc_02_Add_Address -->
-        <test-method signature="My_Acc_03_Change_Password()[pri:0, instance:com.noncommerce.user.User_03_My_Account@4efc180e]" started-at="2022-10-21T04:50:49Z" name="My_Acc_03_Change_Password" finished-at="2022-10-21T04:50:52Z" duration-ms="3827" status="PASS">
+        </test-method> <!-- TC_02_AddProductToCart -->
+        <test-method signature="TC_03_RemoveProductInWishlist()[pri:0, instance:com.noncommerce.user.User_06_Wishlist_Compare_RecentView@67c33749]" started-at="2022-11-11T04:23:05Z" name="TC_03_RemoveProductInWishlist" finished-at="2022-11-11T04:23:07Z" duration-ms="2387" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- My_Acc_03_Change_Password -->
-        <test-method signature="My_Acc_04_My_Product_Review()[pri:0, instance:com.noncommerce.user.User_03_My_Account@4efc180e]" started-at="2022-10-21T04:50:52Z" name="My_Acc_04_My_Product_Review" finished-at="2022-10-21T04:50:55Z" duration-ms="2966" status="PASS">
+        </test-method> <!-- TC_03_RemoveProductInWishlist -->
+        <test-method signature="TC_04_AddProductToCompare()[pri:0, instance:com.noncommerce.user.User_06_Wishlist_Compare_RecentView@67c33749]" started-at="2022-11-11T04:23:07Z" name="TC_04_AddProductToCompare" finished-at="2022-11-11T04:23:11Z" duration-ms="4184" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- My_Acc_04_My_Product_Review -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.noncommerce.user.User_03_My_Account@4efc180e]" started-at="2022-10-21T04:50:55Z" name="afterClass" finished-at="2022-10-21T04:50:56Z" duration-ms="723" status="PASS">
+        </test-method> <!-- TC_04_AddProductToCompare -->
+        <test-method signature="TC_05_RecentlyViewedProducts()[pri:0, instance:com.noncommerce.user.User_06_Wishlist_Compare_RecentView@67c33749]" started-at="2022-11-11T04:23:11Z" name="TC_05_RecentlyViewedProducts" finished-at="2022-11-11T04:23:18Z" duration-ms="6859" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.noncommerce.user.User_03_My_Account -->
+        </test-method> <!-- TC_05_RecentlyViewedProducts -->
+      </class> <!-- com.noncommerce.user.User_06_Wishlist_Compare_RecentView -->
     </test> <!-- Run on Edge -->
   </suite> <!-- Noncommerce_BuildingFramework -->
 </testng-results>

@@ -31,6 +31,7 @@ import baseObject.SearchPageObject;
 import baseObject.SubscriptionPageObject;
 import pageUIs.AbstractPageUI;
 import pageUIs.HomepageUI;
+import pageUIs.ShoppingCartUI;
 
 public class AbstractPage {
 	private By getByLocator(String locatorType) {
@@ -364,22 +365,31 @@ public class AbstractPage {
 			throw new RuntimeException("Invalid page name at My account area.");
 		}
 	}
-	public HomePageObject clickToLogoutLink(WebDriver driver) {
-		waitForElementClickable(driver, castRestParameter(HomepageUI.MENU_LINK, "ico-logout"));
-		clickByJs(driver, castRestParameter(HomepageUI.MENU_LINK, "ico-logout"));
-		return PageGeneratorManager.getToLogoutLink(driver);
+	public AbstractPage openPageAtHeaderByName(WebDriver driver, String pageName) {
+		waitForElementClickable(driver, AbstractPageUI.HEADER_LINK, pageName);
+		clickToElement(driver, AbstractPageUI.HEADER_LINK, pageName);
+		switch(pageName) {
+		case "ico-register":
+			return PageGeneratorManager.openRegisterPage(driver);
+		case "ico-login":
+			return PageGeneratorManager.openLoginPage(driver);
+		case "ico-wishlist":
+			return PageGeneratorManager.openWishlistPage(driver);
+		case "ico-cart":
+			return PageGeneratorManager.openShoppingCartPage(driver);
+		case "ico-logout":
+			return PageGeneratorManager.getToLogoutLink(driver);
+		case "ico-account":
+			return PageGeneratorManager.openMyAccountPage(driver);
+		default:
+			throw new RuntimeException("Invalid page name at My account area.");
+		}
 	}
 	public HomePageObject openHomepage(WebDriver driver) {
 		waitForElementClickable(driver, AbstractPageUI.HOMEPAGE_LINK);
-		clickToElement(driver, null, null);
-		return null;
+		clickToElement(driver, AbstractPageUI.HOMEPAGE_LINK);
+		return PageGeneratorManager.getToHomePageLink(driver);
 		
-	}
-	public MyAccountObject clickToMyAccountLink(WebDriver driver) {
-		// TODO Auto-generated method stub
-		waitForElementClickable(driver, castRestParameter(HomepageUI.MENU_LINK, "ico-account"));
-		clickToElement(driver, castRestParameter(HomepageUI.MENU_LINK, "ico-account"));
-		return new MyAccountObject(driver);
 	}
 	public SearchPageObject clickToSearchLink(WebDriver driver) {
 	// TODO Auto-generated method stub
@@ -390,6 +400,20 @@ public class AbstractPage {
 	public String castRestParameter(String locator, String...values) {
 		locator=String.format(locator, (Object[])values);
 		return locator;	
+	}
+	public String getQuantity(WebDriver driver) {
+		// TODO Auto-generated method stub
+		hoverMouse(driver, AbstractPageUI.HEADER_LINK, "ico-cart");
+		return getTextElement(driver, AbstractPageUI.PRODUCT_QUANTITY);
+	}
+	public String getProductShoppingCart(WebDriver driver) {
+		// TODO Auto-generated method stub
+		hoverMouse(driver, AbstractPageUI.HEADER_LINK, "ico-cart");
+		return getTextElement(driver, AbstractPageUI.PRODUCT_NAME);
+	}
+	public String getProductTotalPrice(WebDriver driver) {
+		hoverMouse(driver, AbstractPageUI.HEADER_LINK, "ico-cart");
+		return getTextElement(driver, AbstractPageUI.PRODUCT_PRICE);
 	}
 	protected int timeOut=30;
 	public int getRandomNumber() {

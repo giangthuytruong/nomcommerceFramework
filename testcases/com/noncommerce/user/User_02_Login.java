@@ -29,7 +29,7 @@ public class User_02_Login extends BaseTest{
 		password="123123";
 		homepage= PageGeneratorManager.openHomePage(driver);
 		email="automationfc"+homepage.getRandomNumber()+"@gmail.com";
-		registerpage=homepage.clickToRegisterLink();
+		registerpage=(RegisterPageObject) homepage.openPageAtHeaderByName(driver, "ico-register");
 		registerpage= new RegisterPageObject(driver);
 		registerpage.sendKeyToFirstname(firstName);
 		  registerpage.sendKeyToLastname(lastName);
@@ -38,11 +38,11 @@ public class User_02_Login extends BaseTest{
 		  registerpage.sendKeyToConfirmationPassword(password);
 		  registerpage.clickToRegisterButton();
 		  Assert.assertEquals(registerpage.getRegistrationResultMessage(), "Your registration completed");
-		  homepage=registerpage.clickToLogoutLink(driver);
+		  homepage=(HomePageObject) registerpage.openPageAtHeaderByName(driver, "ico-logout");
 	}
 	@Test
 	public void Log_01_Empty_Data() {
-		loginpage=homepage.clickToLoginLink();
+		loginpage=(LoginPageObject) homepage.openPageAtHeaderByName(driver, "ico-login");
 		loginpage.clickToLoginButton();
 		Assert.assertEquals(loginpage.getEmailValidation(), "Please enter your email");
 	}

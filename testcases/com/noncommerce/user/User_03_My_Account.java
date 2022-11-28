@@ -32,7 +32,7 @@ public class User_03_My_Account extends BaseTest {
 	private ChangePasswordPageObject changePasswordPage;
 	private MyAccountObject myaccountpage;
 	private MyProductReviewPageObject myProductReviewPage;
-	private String firstNameUpdate, lastNameUpdate, emailUpdate, companyName, newPassword;
+	private String firstNameUpdate, lastNameUpdate, emailUpdate, companyName, newPassword, productName;
 	@Parameters("browser")
 	@BeforeClass
 	public void beforeClass(String browserName) {
@@ -45,8 +45,9 @@ public class User_03_My_Account extends BaseTest {
 		emailUpdate="automationfc.vn@gmail.com";
 		companyName="Automation FC";
 		newPassword="123456";
+		productName="Build your own computer";
 		homepage= PageGeneratorManager.openHomePage(driver);
-		registerpage= homepage.clickToRegisterLink();
+		registerpage=(RegisterPageObject) homepage.openPageAtHeaderByName(driver, "ico-register");
 		registerpage.sendKeyToFirstname(firstName);
 		  registerpage.sendKeyToLastname(lastName);
 		  registerpage.sendKeyToEmail(registerpage.email);
@@ -54,9 +55,8 @@ public class User_03_My_Account extends BaseTest {
 		  registerpage.sendKeyToConfirmationPassword(password);
 		  registerpage.clickToRegisterButton();
 		  Assert.assertEquals(registerpage.getRegistrationResultMessage(), "Your registration completed");
-		  myaccountpage=registerpage.clickToMyAccountLink(driver);
+		  myaccountpage=(MyAccountObject) registerpage.openPageAtHeaderByName(driver, "ico-account");
 	}
-	@Test
 	public void My_Acc_01_Update_Success() {
 		String dateOfBirth="1";
 		String monthOfBirth="1";
@@ -77,7 +77,6 @@ public class User_03_My_Account extends BaseTest {
 		Assert.assertEquals(customerpage.getYearAttribute("value"), yearOfBirth);
 		Assert.assertEquals(customerpage.getCompanyNameAttribute("value"), companyName);
 	}
-	@Test
 	public void My_Acc_02_Add_Address() {
 		String country="Viet Nam";
 		String city="Hanoi";
@@ -110,7 +109,6 @@ public class User_03_My_Account extends BaseTest {
 		Assert.assertEquals(addresspage.getCityPostalCodeText(), city+", "+postalCode);
 		Assert.assertEquals(addresspage.getCountry(), country);
 	}
-	@Test
 	public void My_Acc_03_Change_Password() {
 		changePasswordPage=(ChangePasswordPageObject)addresspage.openPageAtMyAccountByName(driver, "change-password inactive");
 		changePasswordPage.sendKeyToOldPassword(password);
@@ -118,8 +116,8 @@ public class User_03_My_Account extends BaseTest {
 		changePasswordPage.sendKeyToConfirmPassword(newPassword);
 		changePasswordPage.clickToChangePasswordButton();
 		changePasswordPage.closePopup();
-		homepage=changePasswordPage.clickToLogoutLink(driver);
-		loginpage=homepage.clickToLoginLink();
+		homepage=(HomePageObject) changePasswordPage.openPageAtHeaderByName(driver, "ico-logout");
+		loginpage=(LoginPageObject) homepage.openPageAtHeaderByName(driver, "ico-login");
 		loginpage.sendKeyToEmail(emailUpdate);
 		loginpage.sendKeyToPassword(password);
 		loginpage.clickToLoginButton();
@@ -129,17 +127,16 @@ public class User_03_My_Account extends BaseTest {
 		loginpage.clickToLoginButton();
 		Assert.assertTrue(homepage.MyAccountLinkDisplayed());
 	}
-	@Test
 	public void My_Acc_04_My_Product_Review() {
 		String reviewTitle="Ok";
 		String reviewText="Very Good";
-		homepage.clickToProduct();
+		homepage.clickToProduct(productName);
 		productReview=homepage.clickToAddYourReview();
 		productReview.sendToReviewTitle(reviewTitle);
 		productReview.sendToReviewText(reviewText);
 		productReview.clickRating();
 		productReview.clickToSubmitButton();
-		myaccountpage=productReview.clickToMyAccountLink(driver);
+		myaccountpage=(MyAccountObject) productReview.openPageAtHeaderByName(driver, "ico-account");
 		myProductReviewPage=(MyProductReviewPageObject)myaccountpage.openPageAtMyAccountByName(driver, "customer-reviews inactive");
 		Assert.assertEquals(myProductReviewPage.getReviewTitle(), reviewTitle);
 		Assert.assertEquals(myProductReviewPage.getReviewText(), reviewText);

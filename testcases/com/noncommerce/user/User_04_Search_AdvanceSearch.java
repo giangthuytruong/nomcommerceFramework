@@ -27,7 +27,7 @@ public class User_04_Search_AdvanceSearch extends BaseTest {
 		lastName="Job";
 		password="123123";
 		homepage= PageGeneratorManager.openHomePage(driver);
-		registerpage= homepage.clickToRegisterLink();
+		registerpage=(RegisterPageObject) homepage.openPageAtHeaderByName(driver, "ico-register");
 		registerpage.sendKeyToFirstname(firstName);
 		registerpage.sendKeyToLastname(lastName);
 		registerpage.sendKeyToEmail(registerpage.email);

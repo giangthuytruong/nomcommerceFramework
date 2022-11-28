@@ -31,7 +31,7 @@ public class User_01_Register_Login extends BaseTest{
   @Test
   public void Re_01_EmptyData() {
 	  homepage=PageGeneratorManager.openHomePage(driver);
-	  registerpage=homepage.clickToRegisterLink();
+	  registerpage=(RegisterPageObject) homepage.openPageAtHeaderByName(driver, "ico-register");
 	  registerpage.clickToRegisterButton();
 	  Assert.assertEquals(registerpage.getFirstnameError(), "First name is required.");
 	  Assert.assertEquals(registerpage.getLastnameError(), "Last name is required.");
@@ -53,11 +53,11 @@ public class User_01_Register_Login extends BaseTest{
 	  registerpage.sendKeyToConfirmationPassword(password);
 	  registerpage.clickToRegisterButton();
 	  Assert.assertEquals(registerpage.getRegistrationResultMessage(), "Your registration completed");
-	  homepage=registerpage.clickToLogoutLink(driver);
+	  homepage=(HomePageObject) registerpage.openPageAtHeaderByName(driver, "ico-logout");
   }
   @Test
   public void Re_04_PasswordLessThan6() {
-	  registerpage=homepage.clickToRegisterLink();
+	  registerpage=(RegisterPageObject) homepage.openPageAtHeaderByName(driver, "ico-register");
 	  registerpage.sendKeyToPassword("123");
 	  registerpage.clickToRegisterButton();
 	  Assert.assertTrue(registerpage.getPasswordError().contains("Password must meet the following rules:"));
