@@ -27,7 +27,7 @@ public class BaseTest {
 		System.out.println("Run on browser="+browserName);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
-		driver.get("https://demo.nopcommerce.com/");
+		driver.get("https://blueimp.github.io/jQuery-File-Upload/");
 		return driver;
 	}
 	

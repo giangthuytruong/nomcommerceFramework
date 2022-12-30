@@ -1,5 +1,6 @@
 package basePage;
 
+import java.io.File;
 import java.util.List;
 import java.util.Random;
 import java.util.Set;
@@ -29,9 +30,11 @@ import baseObject.PageGeneratorManager;
 import baseObject.RewardPointPageObject;
 import baseObject.SearchPageObject;
 import baseObject.SubscriptionPageObject;
+import commons.GlobalConstants;
 import pageUIs.AbstractPageUI;
 import pageUIs.HomepageUI;
 import pageUIs.ShoppingCartUI;
+import pageUIs.uploadFilePageUI;
 
 public class AbstractPage {
 	private By getByLocator(String locatorType) {
@@ -130,7 +133,7 @@ public class AbstractPage {
 		driver.switchTo().window(parentID);
 	}
 	
-	private WebElement getElement(WebDriver driver, String locatorType) {
+	protected WebElement getElement(WebDriver driver, String locatorType) {
 		return driver.findElement(getByLocator(locatorType));
 	}
 	protected List<WebElement> getElements(WebDriver driver, String locatorType, String...dynamicValues){
@@ -238,9 +241,18 @@ public class AbstractPage {
 		action.sendKeys(getElement(driver, getDynamicXpath(locatorType, dynamicValues)), key).perform();
 	}
 	protected void uploadFile(WebDriver driver, String locatorType, String fileName, String...dynamicValues) {
-		String projectPath=System.getProperty("osName");
+		String projectPath=System.getProperty("user.dir");
 		String filePath=projectPath+"\\Uploadfiles\\"+fileName;
 		sendKeyToElement(driver,getDynamicXpath(locatorType, dynamicValues), filePath);
+	}
+	public void uploadMultipleFiles(WebDriver driver, String...fileNames) {
+		String projectPath=GlobalConstants.UPLOAD_FILE+File.separator;
+		String fullFileName="";
+		for (String file: fileNames) {
+			fullFileName=fullFileName+projectPath+file+"\n";
+		}
+		fullFileName=fullFileName.trim();
+		sendKeyToElement(driver, uploadFilePageUI.UPLOAD_FILES, fullFileName);
 	}
 	protected Object executeJavascriptBrowser(WebDriver driver, String Javascript) {
 		JavascriptExecutor jsExecutor= (JavascriptExecutor) driver;
@@ -415,12 +427,15 @@ public class AbstractPage {
 		hoverMouse(driver, AbstractPageUI.HEADER_LINK, "ico-cart");
 		return getTextElement(driver, AbstractPageUI.PRODUCT_PRICE);
 	}
+	public void refreshPage(WebDriver driver) {
+		driver.navigate().refresh();
+	}
 	protected int timeOut=30;
 	public int getRandomNumber() {
 		Random rand=new Random();
 		return rand.nextInt(9999);
 	}
-	protected void sleepInSecond(long second) {
+	public void sleepInSecond(long second) {
 		// TODO Auto-generated method stub
 		try {
 			Thread.sleep(second*1000);

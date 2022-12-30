@@ -41,10 +41,10 @@ public class CheckoutPageObject extends AbstractPage {
 		return getTextElement(driver, CheckoutPageUI.PAYMENT_INFO);
 	}
 
-	public String getInfoText(String string) {
+	public String getInfoText(String string, String name) {
 		// TODO Auto-generated method stub
-		waitForElementVisible(driver, CheckoutPageUI.INFO_TEXT, string);
-		return getTextElement(driver, CheckoutPageUI.INFO_TEXT, string);
+		waitForElementVisible(driver, CheckoutPageUI.INFO_TEXT, string, name);
+		return getTextElement(driver, CheckoutPageUI.INFO_TEXT, string, name);
 	}
 
 	public String getMethodText(String string) {
@@ -103,10 +103,10 @@ public class CheckoutPageObject extends AbstractPage {
 		selectItemDropdownByText(driver, CheckoutPageUI.SELECT_NAME, string, name);
 	}
 
-	public void inputTextbox(String name) {
+	public void inputTextbox(String name, String value) {
 		// TODO Auto-generated method stub
-		waitForElementClickable(driver, CheckoutPageUI.TEXTBOX_NAME);
-		sendKeyToElement(driver, CheckoutPageUI.TEXTBOX_NAME, name);
+		waitForElementClickable(driver, CheckoutPageUI.TEXTBOX_NAME, value);
+		sendKeyToElement(driver, CheckoutPageUI.TEXTBOX_NAME, name, value);
 	}
 
 }
