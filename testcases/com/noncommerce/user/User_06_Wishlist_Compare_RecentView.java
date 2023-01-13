@@ -5,6 +5,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import baseObject.CompareProductObject;
 import baseObject.HomePageObject;
@@ -23,6 +24,7 @@ public class User_06_Wishlist_Compare_RecentView extends BaseTest{
 	private ShoppingCartObject shoppingcartpage;
 	private CompareProductObject compareproductpage;
 	private String firstName, lastName, name, password, productName, processor, RAM, HDD, OS, software, product1, product2, product3, product4, product5;
+	SoftAssert softAssert;
 	@Parameters("browser")
 	@BeforeClass
 	public void beforeClass(String browserName) {
@@ -50,7 +52,7 @@ public class User_06_Wishlist_Compare_RecentView extends BaseTest{
 		registerpage.sendKeyToPassword(password);
 		registerpage.sendKeyToConfirmationPassword(password);
 		registerpage.clickToRegisterButton();
-		Assert.assertEquals(registerpage.getRegistrationResultMessage(), "Your registration completed");
+		verifyEquals(registerpage.getRegistrationResultMessage(), "Your registration completed test");
 		homepage=registerpage.openHomepage(driver);
 		homepage.clickToProduct(productName);
 	}
@@ -61,8 +63,8 @@ public class User_06_Wishlist_Compare_RecentView extends BaseTest{
 		homepage.chooseHDDCheckbox(HDD);
 		homepage.chooseOSCheckbox(OS);
 		homepage.tickSoftware(software);
-		homepage.clickToButton("add-to-wishlist-button-1");
-		Assert.assertEquals(homepage.notificationSuccessText(), "The product has been added to your wishlist");
+		homepage.clickToButton("Add to wishlist");
+		verifyEquals(homepage.notificationSuccessText(), "The product has been added to your wishlist");
 		wishlistpage=homepage.openWishlistPage(driver);
 		Assert.assertEquals(wishlistpage.getProductName(), productName);
 		Assert.assertTrue(wishlistpage.getProperty().contains(processor));
@@ -70,13 +72,13 @@ public class User_06_Wishlist_Compare_RecentView extends BaseTest{
 		Assert.assertTrue(wishlistpage.getProperty().contains(HDD));
 		Assert.assertTrue(wishlistpage.getProperty().contains(OS));
 		wishlistpage.wishlistURLForSharing();
-		Assert.assertTrue(wishlistpage.getUsername().contains(name));
+		verifyTrue(wishlistpage.getUsername().contains(name));
 	}
 	@Test
 	public void TC_02_AddProductToCart() {
 		wishlistpage.clickCheckboxAddToCart();
 		shoppingcartpage= wishlistpage.openShoppingCart(driver);
-		Assert.assertEquals(shoppingcartpage.getQuantity(driver), "There are 1 item(s)");
+		verifyEquals(shoppingcartpage.getQuantity(driver), "There are 1 item(s) in your cart.");
 		wishlistpage=(WishlistPageObject) shoppingcartpage.openPageAtHeaderByName(driver, "ico-wishlist");
 	}
 	@Test
@@ -88,26 +90,26 @@ public class User_06_Wishlist_Compare_RecentView extends BaseTest{
 		homepage.chooseHDDCheckbox(HDD);
 		homepage.chooseOSCheckbox(OS);
 		homepage.tickSoftware(software);
-		homepage.clickToButton("add-to-wishlist-button-1");
-		Assert.assertEquals(homepage.notificationSuccessText(), "The product has been added to your wishlist");
+		homepage.clickToButton("Add to wishlist");
+		verifyEquals(homepage.notificationSuccessText(), "The product has been added to your wishlist");
 		wishlistpage=homepage.openWishlistPage(driver);
 		wishlistpage.clickToRemoveButton();
-		Assert.assertEquals(wishlistpage.emptyMessage(),"The wishlist is empty!");
+		verifyEquals(wishlistpage.emptyMessage(),"The wishlist is empty!");
 	}
 	@Test
 	public void TC_04_AddProductToCompare() {
 		homepage=wishlistpage.openHomepage(driver);
 		homepage.clickToCompareList(product1);
-		Assert.assertEquals(homepage.notificationSuccessText(), "The product has been added to your product comparison");
+		verifyEquals(homepage.notificationSuccessText(), "The product has been added to your product comparison");
 		homepage.closeNotification();
 		sleepInSecond(2);
 		homepage.clickToCompareList(product2);
-		Assert.assertEquals(homepage.notificationSuccessText(), "The product has been added to your product comparison");
+		verifyEquals(homepage.notificationSuccessText(), "The product has been added to your product comparison");
 		compareproductpage=homepage.openCompareProduct(driver);
-		Assert.assertEquals(compareproductpage.getProductName(product1), product1);
-		Assert.assertEquals(compareproductpage.getProductName(product2), product2);
+		verifyEquals(compareproductpage.getProductName(product1), product1);
+		verifyEquals(compareproductpage.getProductName(product2), product2);
 		compareproductpage.clickToClearListButton();
-		Assert.assertEquals(compareproductpage.getNoDataMessage(), "You have no items to compare.");
+		verifyEquals(compareproductpage.getNoDataMessage(), "You have no items to compare.");
 	}
 	@Test
 	public void TC_05_RecentlyViewedProducts() {
@@ -122,9 +124,9 @@ public class User_06_Wishlist_Compare_RecentView extends BaseTest{
 		homepage.clickToCategoryProduct("Computers ","Notebooks ");
 		homepage.clickToProduct(product5);
 		homepage.clickToCategoryProduct("Computers ","Notebooks ");
-		Assert.assertEquals(homepage.getProductRecentlyViewName("1"), product5);
-		Assert.assertEquals(homepage.getProductRecentlyViewName("2"), product4);
-		Assert.assertEquals(homepage.getProductRecentlyViewName("3"), product3);
+		verifyEquals(homepage.getProductRecentlyViewName("1"), product5);
+		verifyEquals(homepage.getProductRecentlyViewName("2"), product4);
+		verifyEquals(homepage.getProductRecentlyViewName("3"), product3);
 	}
 	protected void sleepInSecond(long second) {
 		// TODO Auto-generated method stub

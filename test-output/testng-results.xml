@@ -1,13 +1,429 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="10" passed="8" failed="2" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[[2023-01-11 15:40:53,260] Login - Step 01: Open 'HomePage'
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:40:53,260] Login - Step 01: Open 'HomePage'
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:40:53,267] Login - Step 02: Open 'Register Page'
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:40:53,267] Login - Step 02: Open 'Register Page'
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:40:54,207] Login - Step 03: Click to Register button without filling in text fields
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:40:54,207] Login - Step 03: Click to Register button without filling in text fields
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:40:54,276] Login - Step 04: Verify firstname validation message displayed
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:40:54,276] Login - Step 04: Verify firstname validation message displayed
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:40:54,311] Login - Step 04: Verify lastname validation message displayed
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:40:54,311] Login - Step 04: Verify lastname validation message displayed
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:40:54,348] Login - Step 04: Verify email validation message displayed
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:40:54,348] Login - Step 04: Verify email validation message displayed
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:40:54,383] Login - Step 05: Verify password validation message displayed
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:40:54,383] Login - Step 05: Verify password validation message displayed
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:40:54,420] Login - Step 05: Verify confirm password validation message displayed
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:40:54,420] Login - Step 05: Verify confirm password validation message displayed
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:40:54,460] Login - Step 01: Input data to 'Email' textbox: tesst
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:40:54,460] Login - Step 01: Input data to 'Email' textbox: tesst
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:40:54,555] Login - Step 02: Verify email validation message displayed
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:40:54,555] Login - Step 02: Verify email validation message displayed
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:40:54,593] Login - Step 01: Input data to 'Firstname' textbox:Steve
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:40:54,593] Login - Step 01: Input data to 'Firstname' textbox:Steve
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:40:54,678] Login - Step 02: Input data to 'Lastname' textbox:Job
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:40:54,678] Login - Step 02: Input data to 'Lastname' textbox:Job
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:40:54,762] Login - Step 03: Input data to 'Email' textbox:steve5576@gmail.com
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:40:54,762] Login - Step 03: Input data to 'Email' textbox:steve5576@gmail.com
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:40:54,844] Login - Step 04: Input data to 'Password' textbox:123123
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:40:54,844] Login - Step 04: Input data to 'Password' textbox:123123
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:40:54,931] Login - Step 05: Input data to 'Confirmation password' textbox:123123
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:40:54,931] Login - Step 05: Input data to 'Confirmation password' textbox:123123
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:40:55,011] Login - Step 06: Click to Register button
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:40:55,011] Login - Step 06: Click to Register button
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:40:56,101] Login - Step 07: Verify registration success message displayed
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:40:56,101] Login - Step 07: Verify registration success message displayed
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:40:56,146] Login - Step 08: Logout
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:40:56,146] Login - Step 08: Logout
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:41:26,207] Login - Step 01: Open Register page
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:41:26,207] Login - Step 01: Open Register page
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:41:27,140] Login - Step 02: Input data to 'Password' textbox: 123
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:41:27,140] Login - Step 02: Input data to 'Password' textbox: 123
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:41:27,230] Login - Step 03: Click to register button
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:41:27,230] Login - Step 03: Click to register button
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:41:27,280] Login - Step 04: Verify password validation error message displayed
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:41:27,280] Login - Step 04: Verify password validation error message displayed
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:41:27,317] Login - Step 01: Input data to 'Password' textbox: 123123
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:41:27,317] Login - Step 01: Input data to 'Password' textbox: 123123
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:41:27,393] Login - Step 02: Input data to 'Confirmation password' textbox: 123567
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:41:27,393] Login - Step 02: Input data to 'Confirmation password' textbox: 123567
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:41:27,468] Login - Step 03: Click to register button
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:41:27,468] Login - Step 03: Click to register button
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:41:27,502] Login - Step 04: Verify confirmation password validation error message displayed
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:41:27,502] Login - Step 04: Verify confirmation password validation error message displayed
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:41:30,527] Login - Step 01: Open 'HomePage'
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:41:30,527] Login - Step 01: Open 'HomePage'
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:41:30,527] Login - Step 02: Open 'Register Page'
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:41:30,527] Login - Step 02: Open 'Register Page'
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:41:30,928] Login - Step 03: Click to Register button without filling in text fields
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:41:30,928] Login - Step 03: Click to Register button without filling in text fields
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:41:30,987] Login - Step 04: Verify firstname validation message displayed
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:41:30,987] Login - Step 04: Verify firstname validation message displayed
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:41:31,024] Login - Step 04: Verify lastname validation message displayed
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:41:31,024] Login - Step 04: Verify lastname validation message displayed
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:41:31,054] Login - Step 04: Verify email validation message displayed
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:41:31,054] Login - Step 04: Verify email validation message displayed
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:41:31,086] Login - Step 05: Verify password validation message displayed
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:41:31,086] Login - Step 05: Verify password validation message displayed
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:41:31,118] Login - Step 05: Verify confirm password validation message displayed
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:41:31,118] Login - Step 05: Verify confirm password validation message displayed
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:41:31,152] Login - Step 01: Input data to 'Email' textbox: tesst
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:41:31,152] Login - Step 01: Input data to 'Email' textbox: tesst
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:41:31,234] Login - Step 02: Verify email validation message displayed
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:41:31,234] Login - Step 02: Verify email validation message displayed
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:41:31,263] Login - Step 01: Input data to 'Firstname' textbox:Steve
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:41:31,263] Login - Step 01: Input data to 'Firstname' textbox:Steve
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:41:31,345] Login - Step 02: Input data to 'Lastname' textbox:Job
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:41:31,345] Login - Step 02: Input data to 'Lastname' textbox:Job
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:41:31,421] Login - Step 03: Input data to 'Email' textbox:steve387@gmail.com
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:41:31,421] Login - Step 03: Input data to 'Email' textbox:steve387@gmail.com
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:41:31,497] Login - Step 04: Input data to 'Password' textbox:123123
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:41:31,497] Login - Step 04: Input data to 'Password' textbox:123123
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:41:31,585] Login - Step 05: Input data to 'Confirmation password' textbox:123123
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:41:31,585] Login - Step 05: Input data to 'Confirmation password' textbox:123123
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:41:31,667] Login - Step 06: Click to Register button
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:41:31,667] Login - Step 06: Click to Register button
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:41:32,223] Login - Step 07: Verify registration success message displayed
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:41:32,223] Login - Step 07: Verify registration success message displayed
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:41:32,270] Login - Step 08: Logout
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:41:32,270] Login - Step 08: Logout
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:42:02,320] Login - Step 01: Open Register page
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:42:02,320] Login - Step 01: Open Register page
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:42:03,329] Login - Step 02: Input data to 'Password' textbox: 123
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:42:03,329] Login - Step 02: Input data to 'Password' textbox: 123
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:42:03,410] Login - Step 03: Click to register button
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:42:03,410] Login - Step 03: Click to register button
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:42:03,452] Login - Step 04: Verify password validation error message displayed
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:42:03,452] Login - Step 04: Verify password validation error message displayed
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:42:03,484] Login - Step 01: Input data to 'Password' textbox: 123123
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:42:03,484] Login - Step 01: Input data to 'Password' textbox: 123123
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:42:03,553] Login - Step 02: Input data to 'Confirmation password' textbox: 123567
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:42:03,553] Login - Step 02: Input data to 'Confirmation password' textbox: 123567
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:42:03,625] Login - Step 03: Click to register button
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:42:03,625] Login - Step 03: Click to register button
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:42:03,657] Login - Step 04: Verify confirmation password validation error message displayed
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-01-11 15:42:03,657] Login - Step 04: Verify confirmation password validation error message displayed
+<br>]]>
+    </line>
   </reporter-output>
-  <suite started-at="2022-12-30T10:11:38Z" name="Noncommerce_BuildingFramework" finished-at="2022-12-30T10:12:00Z" duration-ms="21116">
+  <suite started-at="2023-01-11T08:40:50Z" name="Noncommerce_BuildingFramework" finished-at="2023-01-11T08:42:04Z" duration-ms="73778">
     <groups>
     </groups>
-    <test started-at="2022-12-30T10:11:38Z" name="Run on Chrome" finished-at="2022-12-30T10:11:49Z" duration-ms="10119">
-      <class name="com.noncommerce.user.uploadMultipleFile">
-        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.noncommerce.user.uploadMultipleFile@6c130c45]" started-at="2022-12-30T10:11:38Z" name="beforeClass" finished-at="2022-12-30T10:11:41Z" duration-ms="2806" status="PASS">
+    <test started-at="2023-01-11T08:40:50Z" name="Run on Chrome" finished-at="2023-01-11T08:41:28Z" duration-ms="37486">
+      <class name="com.noncommerce.user.User_01_Register_Login">
+        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.noncommerce.user.User_01_Register_Login@28cda624]" started-at="2023-01-11T08:40:50Z" name="beforeClass" finished-at="2023-01-11T08:40:53Z" duration-ms="2602" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,19 +434,311 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="TC_01_Upload_Multiple_File_Per_Time()[pri:0, instance:com.noncommerce.user.uploadMultipleFile@6c130c45]" started-at="2022-12-30T10:11:41Z" name="TC_01_Upload_Multiple_File_Per_Time" finished-at="2022-12-30T10:11:47Z" duration-ms="6120" status="PASS">
+        <test-method signature="Re_01_EmptyData()[pri:0, instance:com.noncommerce.user.User_01_Register_Login@28cda624]" started-at="2023-01-11T08:40:53Z" name="Re_01_EmptyData" finished-at="2023-01-11T08:40:54Z" duration-ms="1201" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[[2023-01-11 15:40:53,260] Login - Step 01: Open 'HomePage'
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:40:53,260] Login - Step 01: Open 'HomePage'
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:40:53,267] Login - Step 02: Open 'Register Page'
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:40:53,267] Login - Step 02: Open 'Register Page'
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:40:54,207] Login - Step 03: Click to Register button without filling in text fields
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:40:54,207] Login - Step 03: Click to Register button without filling in text fields
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:40:54,276] Login - Step 04: Verify firstname validation message displayed
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:40:54,276] Login - Step 04: Verify firstname validation message displayed
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:40:54,311] Login - Step 04: Verify lastname validation message displayed
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:40:54,311] Login - Step 04: Verify lastname validation message displayed
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:40:54,348] Login - Step 04: Verify email validation message displayed
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:40:54,348] Login - Step 04: Verify email validation message displayed
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:40:54,383] Login - Step 05: Verify password validation message displayed
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:40:54,383] Login - Step 05: Verify password validation message displayed
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:40:54,420] Login - Step 05: Verify confirm password validation message displayed
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:40:54,420] Login - Step 05: Verify confirm password validation message displayed
+<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Re_01_EmptyData -->
+        <test-method signature="Re_02_InvalidEmail()[pri:0, instance:com.noncommerce.user.User_01_Register_Login@28cda624]" started-at="2023-01-11T08:40:54Z" name="Re_02_InvalidEmail" finished-at="2023-01-11T08:40:54Z" duration-ms="133" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[[2023-01-11 15:40:54,460] Login - Step 01: Input data to 'Email' textbox: tesst
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:40:54,460] Login - Step 01: Input data to 'Email' textbox: tesst
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:40:54,555] Login - Step 02: Verify email validation message displayed
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:40:54,555] Login - Step 02: Verify email validation message displayed
+<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Re_02_InvalidEmail -->
+        <test-method signature="Re_03_ValidData()[pri:0, instance:com.noncommerce.user.User_01_Register_Login@28cda624]" started-at="2023-01-11T08:40:54Z" name="Re_03_ValidData" finished-at="2023-01-11T08:41:26Z" duration-ms="31611" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='ico-logout']"}
+  (Session info: chrome=109.0.5414.74)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:54:15.039Z'
+System info: host: 'ADMIN', ip: '192.168.1.46', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=109.0.5414.74 (e7c5703604daa9cc128ccf5a5d3e993513758913-refs/branch-heads/5414@{#1172}), userDataDir=C:\Users\Admin\AppData\Local\Temp\scoped_dir11604_583806778}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:52330}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, browserVersion=109.0.5414.74, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: 4ac97ffe59ebfd51991da06424ead4af
+*** Element info: {Using=xpath, value=//a[@class='ico-logout']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='ico-logout']"}
+  (Session info: chrome=109.0.5414.74)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:54:15.039Z'
+System info: host: 'ADMIN', ip: '192.168.1.46', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=109.0.5414.74 (e7c5703604daa9cc128ccf5a5d3e993513758913-refs/branch-heads/5414@{#1172}), userDataDir=C:\Users\Admin\AppData\Local\Temp\scoped_dir11604_583806778}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:52330}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, browserVersion=109.0.5414.74, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: 4ac97ffe59ebfd51991da06424ead4af
+*** Element info: {Using=xpath, value=//a[@class='ico-logout']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:518)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)
+at basePage.AbstractPage.getElement(AbstractPage.java:140)
+at basePage.AbstractPage.waitForElementClickable(AbstractPage.java:345)
+at basePage.AbstractPage.openPageAtHeaderByName(AbstractPage.java:384)
+at com.noncommerce.user.User_01_Register_Login.Re_03_ValidData(User_01_Register_Login.java:89)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+            <line>
+              <![CDATA[[2023-01-11 15:40:54,593] Login - Step 01: Input data to 'Firstname' textbox:Steve
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:40:54,593] Login - Step 01: Input data to 'Firstname' textbox:Steve
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:40:54,678] Login - Step 02: Input data to 'Lastname' textbox:Job
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:40:54,678] Login - Step 02: Input data to 'Lastname' textbox:Job
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:40:54,762] Login - Step 03: Input data to 'Email' textbox:steve5576@gmail.com
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:40:54,762] Login - Step 03: Input data to 'Email' textbox:steve5576@gmail.com
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:40:54,844] Login - Step 04: Input data to 'Password' textbox:123123
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:40:54,844] Login - Step 04: Input data to 'Password' textbox:123123
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:40:54,931] Login - Step 05: Input data to 'Confirmation password' textbox:123123
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:40:54,931] Login - Step 05: Input data to 'Confirmation password' textbox:123123
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:40:55,011] Login - Step 06: Click to Register button
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:40:55,011] Login - Step 06: Click to Register button
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:40:56,101] Login - Step 07: Verify registration success message displayed
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:40:56,101] Login - Step 07: Verify registration success message displayed
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:40:56,146] Login - Step 08: Logout
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:40:56,146] Login - Step 08: Logout
+<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Re_03_ValidData -->
+        <test-method signature="Re_04_PasswordLessThan6()[pri:0, instance:com.noncommerce.user.User_01_Register_Login@28cda624]" started-at="2023-01-11T08:41:26Z" name="Re_04_PasswordLessThan6" finished-at="2023-01-11T08:41:27Z" duration-ms="1109" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[[2023-01-11 15:41:26,207] Login - Step 01: Open Register page
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:41:26,207] Login - Step 01: Open Register page
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:41:27,140] Login - Step 02: Input data to 'Password' textbox: 123
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:41:27,140] Login - Step 02: Input data to 'Password' textbox: 123
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:41:27,230] Login - Step 03: Click to register button
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:41:27,230] Login - Step 03: Click to register button
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:41:27,280] Login - Step 04: Verify password validation error message displayed
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:41:27,280] Login - Step 04: Verify password validation error message displayed
+<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Re_04_PasswordLessThan6 -->
+        <test-method signature="Re_05_ConfirmPasswordInvalid()[pri:0, instance:com.noncommerce.user.User_01_Register_Login@28cda624]" started-at="2023-01-11T08:41:27Z" name="Re_05_ConfirmPasswordInvalid" finished-at="2023-01-11T08:41:27Z" duration-ms="217" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[[2023-01-11 15:41:27,317] Login - Step 01: Input data to 'Password' textbox: 123123
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:41:27,317] Login - Step 01: Input data to 'Password' textbox: 123123
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:41:27,393] Login - Step 02: Input data to 'Confirmation password' textbox: 123567
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:41:27,393] Login - Step 02: Input data to 'Confirmation password' textbox: 123567
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:41:27,468] Login - Step 03: Click to register button
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:41:27,468] Login - Step 03: Click to register button
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:41:27,502] Login - Step 04: Verify confirmation password validation error message displayed
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:41:27,502] Login - Step 04: Verify confirmation password validation error message displayed
+<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Re_05_ConfirmPasswordInvalid -->
+        <test-method is-config="true" signature="AfterClass()[pri:0, instance:com.noncommerce.user.User_01_Register_Login@28cda624]" started-at="2023-01-11T08:41:27Z" name="AfterClass" finished-at="2023-01-11T08:41:28Z" duration-ms="600" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_01_Upload_Multiple_File_Per_Time -->
-        <test-method signature="TC_01_Upload_One_File_Per_Time()[pri:0, instance:com.noncommerce.user.uploadMultipleFile@6c130c45]" started-at="2022-12-30T10:11:47Z" name="TC_01_Upload_One_File_Per_Time" finished-at="2022-12-30T10:11:49Z" duration-ms="1184" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_01_Upload_One_File_Per_Time -->
-      </class> <!-- com.noncommerce.user.uploadMultipleFile -->
+        </test-method> <!-- AfterClass -->
+      </class> <!-- com.noncommerce.user.User_01_Register_Login -->
     </test> <!-- Run on Chrome -->
-    <test started-at="2022-12-30T10:11:49Z" name="Run on Edge" finished-at="2022-12-30T10:12:00Z" duration-ms="10988">
-      <class name="com.noncommerce.user.uploadMultipleFile">
-        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.noncommerce.user.uploadMultipleFile@7e5afaa6]" started-at="2022-12-30T10:11:49Z" name="beforeClass" finished-at="2022-12-30T10:11:52Z" duration-ms="3665" status="PASS">
+    <test started-at="2023-01-11T08:41:28Z" name="Run on Edge" finished-at="2023-01-11T08:42:04Z" duration-ms="36273">
+      <class name="com.noncommerce.user.User_01_Register_Login">
+        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.noncommerce.user.User_01_Register_Login@1df8da7a]" started-at="2023-01-11T08:41:28Z" name="beforeClass" finished-at="2023-01-11T08:41:30Z" duration-ms="2372" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -41,15 +749,307 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="TC_01_Upload_Multiple_File_Per_Time()[pri:0, instance:com.noncommerce.user.uploadMultipleFile@7e5afaa6]" started-at="2022-12-30T10:11:52Z" name="TC_01_Upload_Multiple_File_Per_Time" finished-at="2022-12-30T10:11:58Z" duration-ms="6141" status="PASS">
+        <test-method signature="Re_01_EmptyData()[pri:0, instance:com.noncommerce.user.User_01_Register_Login@1df8da7a]" started-at="2023-01-11T08:41:30Z" name="Re_01_EmptyData" finished-at="2023-01-11T08:41:31Z" duration-ms="625" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[[2023-01-11 15:41:30,527] Login - Step 01: Open 'HomePage'
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:41:30,527] Login - Step 01: Open 'HomePage'
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:41:30,527] Login - Step 02: Open 'Register Page'
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:41:30,527] Login - Step 02: Open 'Register Page'
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:41:30,928] Login - Step 03: Click to Register button without filling in text fields
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:41:30,928] Login - Step 03: Click to Register button without filling in text fields
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:41:30,987] Login - Step 04: Verify firstname validation message displayed
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:41:30,987] Login - Step 04: Verify firstname validation message displayed
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:41:31,024] Login - Step 04: Verify lastname validation message displayed
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:41:31,024] Login - Step 04: Verify lastname validation message displayed
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:41:31,054] Login - Step 04: Verify email validation message displayed
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:41:31,054] Login - Step 04: Verify email validation message displayed
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:41:31,086] Login - Step 05: Verify password validation message displayed
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:41:31,086] Login - Step 05: Verify password validation message displayed
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:41:31,118] Login - Step 05: Verify confirm password validation message displayed
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:41:31,118] Login - Step 05: Verify confirm password validation message displayed
+<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Re_01_EmptyData -->
+        <test-method signature="Re_02_InvalidEmail()[pri:0, instance:com.noncommerce.user.User_01_Register_Login@1df8da7a]" started-at="2023-01-11T08:41:31Z" name="Re_02_InvalidEmail" finished-at="2023-01-11T08:41:31Z" duration-ms="111" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[[2023-01-11 15:41:31,152] Login - Step 01: Input data to 'Email' textbox: tesst
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:41:31,152] Login - Step 01: Input data to 'Email' textbox: tesst
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:41:31,234] Login - Step 02: Verify email validation message displayed
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:41:31,234] Login - Step 02: Verify email validation message displayed
+<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Re_02_InvalidEmail -->
+        <test-method signature="Re_03_ValidData()[pri:0, instance:com.noncommerce.user.User_01_Register_Login@1df8da7a]" started-at="2023-01-11T08:41:31Z" name="Re_03_ValidData" finished-at="2023-01-11T08:42:02Z" duration-ms="31056" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='ico-logout']"}
+  (Session info: MicrosoftEdge=106.0.1370.34)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:54:15.039Z'
+System info: host: 'ADMIN', ip: '192.168.1.46', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities [{networkConnectionEnabled=false, msedge={msedgedriverVersion=106.0.1370.86 (ba3aebce603b66c1b34db1a70e3f87bc4b8c5cb5), userDataDir=C:\Users\Admin\AppData\Local\Temp\scoped_dir19200_1028298273}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), webauthn:extension:credBlob=true, acceptInsecureCerts=false, browserVersion=106.0.1370.34, browserName=msedge, javascriptEnabled=true, platformName=XP, ms:edgeOptions={debuggerAddress=localhost:52489}, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: 59d9e626921a3b19cbbc843c9a82c033
+*** Element info: {Using=xpath, value=//a[@class='ico-logout']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='ico-logout']"}
+  (Session info: MicrosoftEdge=106.0.1370.34)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:54:15.039Z'
+System info: host: 'ADMIN', ip: '192.168.1.46', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities [{networkConnectionEnabled=false, msedge={msedgedriverVersion=106.0.1370.86 (ba3aebce603b66c1b34db1a70e3f87bc4b8c5cb5), userDataDir=C:\Users\Admin\AppData\Local\Temp\scoped_dir19200_1028298273}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), webauthn:extension:credBlob=true, acceptInsecureCerts=false, browserVersion=106.0.1370.34, browserName=msedge, javascriptEnabled=true, platformName=XP, ms:edgeOptions={debuggerAddress=localhost:52489}, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: 59d9e626921a3b19cbbc843c9a82c033
+*** Element info: {Using=xpath, value=//a[@class='ico-logout']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:518)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)
+at basePage.AbstractPage.getElement(AbstractPage.java:140)
+at basePage.AbstractPage.waitForElementClickable(AbstractPage.java:345)
+at basePage.AbstractPage.openPageAtHeaderByName(AbstractPage.java:384)
+at com.noncommerce.user.User_01_Register_Login.Re_03_ValidData(User_01_Register_Login.java:89)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+            <line>
+              <![CDATA[[2023-01-11 15:41:31,263] Login - Step 01: Input data to 'Firstname' textbox:Steve
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:41:31,263] Login - Step 01: Input data to 'Firstname' textbox:Steve
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:41:31,345] Login - Step 02: Input data to 'Lastname' textbox:Job
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:41:31,345] Login - Step 02: Input data to 'Lastname' textbox:Job
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:41:31,421] Login - Step 03: Input data to 'Email' textbox:steve387@gmail.com
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:41:31,421] Login - Step 03: Input data to 'Email' textbox:steve387@gmail.com
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:41:31,497] Login - Step 04: Input data to 'Password' textbox:123123
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:41:31,497] Login - Step 04: Input data to 'Password' textbox:123123
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:41:31,585] Login - Step 05: Input data to 'Confirmation password' textbox:123123
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:41:31,585] Login - Step 05: Input data to 'Confirmation password' textbox:123123
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:41:31,667] Login - Step 06: Click to Register button
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:41:31,667] Login - Step 06: Click to Register button
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:41:32,223] Login - Step 07: Verify registration success message displayed
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:41:32,223] Login - Step 07: Verify registration success message displayed
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:41:32,270] Login - Step 08: Logout
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:41:32,270] Login - Step 08: Logout
+<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Re_03_ValidData -->
+        <test-method signature="Re_04_PasswordLessThan6()[pri:0, instance:com.noncommerce.user.User_01_Register_Login@1df8da7a]" started-at="2023-01-11T08:42:02Z" name="Re_04_PasswordLessThan6" finished-at="2023-01-11T08:42:03Z" duration-ms="1163" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[[2023-01-11 15:42:02,320] Login - Step 01: Open Register page
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:42:02,320] Login - Step 01: Open Register page
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:42:03,329] Login - Step 02: Input data to 'Password' textbox: 123
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:42:03,329] Login - Step 02: Input data to 'Password' textbox: 123
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:42:03,410] Login - Step 03: Click to register button
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:42:03,410] Login - Step 03: Click to register button
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:42:03,452] Login - Step 04: Verify password validation error message displayed
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:42:03,452] Login - Step 04: Verify password validation error message displayed
+<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Re_04_PasswordLessThan6 -->
+        <test-method signature="Re_05_ConfirmPasswordInvalid()[pri:0, instance:com.noncommerce.user.User_01_Register_Login@1df8da7a]" started-at="2023-01-11T08:42:03Z" name="Re_05_ConfirmPasswordInvalid" finished-at="2023-01-11T08:42:03Z" duration-ms="203" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[[2023-01-11 15:42:03,484] Login - Step 01: Input data to 'Password' textbox: 123123
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:42:03,484] Login - Step 01: Input data to 'Password' textbox: 123123
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:42:03,553] Login - Step 02: Input data to 'Confirmation password' textbox: 123567
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:42:03,553] Login - Step 02: Input data to 'Confirmation password' textbox: 123567
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:42:03,625] Login - Step 03: Click to register button
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:42:03,625] Login - Step 03: Click to register button
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:42:03,657] Login - Step 04: Verify confirmation password validation error message displayed
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-01-11 15:42:03,657] Login - Step 04: Verify confirmation password validation error message displayed
+<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Re_05_ConfirmPasswordInvalid -->
+        <test-method is-config="true" signature="AfterClass()[pri:0, instance:com.noncommerce.user.User_01_Register_Login@1df8da7a]" started-at="2023-01-11T08:42:03Z" name="AfterClass" finished-at="2023-01-11T08:42:04Z" duration-ms="739" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_01_Upload_Multiple_File_Per_Time -->
-        <test-method signature="TC_01_Upload_One_File_Per_Time()[pri:0, instance:com.noncommerce.user.uploadMultipleFile@7e5afaa6]" started-at="2022-12-30T10:11:58Z" name="TC_01_Upload_One_File_Per_Time" finished-at="2022-12-30T10:12:00Z" duration-ms="1180" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_01_Upload_One_File_Per_Time -->
-      </class> <!-- com.noncommerce.user.uploadMultipleFile -->
+        </test-method> <!-- AfterClass -->
+      </class> <!-- com.noncommerce.user.User_01_Register_Login -->
     </test> <!-- Run on Edge -->
   </suite> <!-- Noncommerce_BuildingFramework -->
 </testng-results>
