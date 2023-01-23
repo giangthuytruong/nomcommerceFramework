@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+	<listener class-name="commons.MethodListener"></listener>
+	<listener class-name="org.uncommons.reportng.HTMLReporter"></listener>
+	<listener class-name="org.uncommons.reportng.JUnitXMLReporter"></listener>
+</listeners>
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.noncommerce.user.User_02_Login"/>
+      <class name="com.noncommerce.user.User_07_Order"/>
+      <class name="com.noncommerce.user.User_01_Register_Login"/>
+      <class name="com.noncommerce.user.User_04_Search_AdvanceSearch"/>
+      <class name="com.noncommerce.user.DataGrid_Jquery"/>
+      <class name="com.noncommerce.user.Element_Not_Displayed"/>
+      <class name="runTestcase.NewTest"/>
+      <class name="com.noncommerce.user.uploadMultipleFile"/>
+      <class name="com.noncommerce.user.User_06_Wishlist_Compare_RecentView"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
