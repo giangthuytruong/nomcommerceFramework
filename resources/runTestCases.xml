@@ -2,8 +2,9 @@
 <suite name="Noncommerce_BuildingFramework">
 <listeners>
 	<listener class-name="commons.MethodListener"></listener>
-	<listener class-name="org.uncommons.reportng.HTMLReporter"></listener>
-	<listener class-name="org.uncommons.reportng.JUnitXMLReporter"></listener>
+	<listener class-name="reportConfig.AllureTestListener"></listener>
+	<!-- <listener class-name="org.uncommons.reportng.HTMLReporter"></listener>
+	<listener class-name="org.uncommons.reportng.JUnitXMLReporter"></listener> -->
 </listeners>
   <test name="Run on Chrome">
   <parameter name="browser" value="chrome"/>

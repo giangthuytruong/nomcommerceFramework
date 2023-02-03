@@ -34,6 +34,7 @@ import baseObject.RewardPointPageObject;
 import baseObject.SearchPageObject;
 import baseObject.SubscriptionPageObject;
 import commons.GlobalConstants;
+import io.qameta.allure.Step;
 import pageUIs.AbstractPageUI;
 import pageUIs.HomepageUI;
 import pageUIs.ShoppingCartUI;
@@ -380,6 +381,7 @@ public class AbstractPage {
 			throw new RuntimeException("Invalid page name at My account area.");
 		}
 	}
+	@Step ("Open register page at header by name:{driver} {ico-register}")
 	public AbstractPage openPageAtHeaderByName(WebDriver driver, String pageName) {
 		waitForElementClickable(driver, AbstractPageUI.HEADER_LINK, pageName);
 		clickToElement(driver, AbstractPageUI.HEADER_LINK, pageName);

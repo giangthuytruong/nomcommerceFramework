@@ -3,6 +3,7 @@ package baseObject;
 import org.openqa.selenium.WebDriver;
 
 import basePage.AbstractPage;
+import io.qameta.allure.Step;
 import pageUIs.AbstractPageUI;
 
 
@@ -47,6 +48,7 @@ public class PageGeneratorManager {
 		// TODO Auto-generated method stub
 		return new MyProductReviewPageObject(driver);
 	}
+	@Step ("Open Homepage")
 	public static HomePageObject openHomePage(WebDriver driver) {
 		// TODO Auto-generated method stub
 		return new HomePageObject(driver);
