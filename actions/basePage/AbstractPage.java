@@ -1,7 +1,6 @@
 package basePage;
 
 import java.io.File;
-import java.util.Date;
 import java.util.List;
 import java.util.Random;
 import java.util.Set;
@@ -9,6 +8,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Cookie;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -19,25 +19,13 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 
-import baseObject.AddressPageObject;
-import baseObject.ChangePasswordPageObject;
-import baseObject.CustomerInfoPageObject;
-import baseObject.DownloadableProductPageObject;
 import baseObject.HomePageObject;
-import baseObject.MyAccountObject;
-import baseObject.MyProductReviewPageObject;
-import baseObject.OrderPageObject;
 import baseObject.PageGeneratorManager;
-import baseObject.RewardPointPageObject;
 import baseObject.SearchPageObject;
-import baseObject.SubscriptionPageObject;
 import commons.GlobalConstants;
 import io.qameta.allure.Step;
 import pageUIs.AbstractPageUI;
-import pageUIs.HomepageUI;
-import pageUIs.ShoppingCartUI;
 import pageUIs.uploadFilePageUI;
 
 public class AbstractPage {
@@ -381,7 +369,7 @@ public class AbstractPage {
 			throw new RuntimeException("Invalid page name at My account area.");
 		}
 	}
-	@Step ("Open register page at header by name:{driver} {ico-register}")
+	@Step ("Open register page at header by name:{driver} {pagename}")
 	public AbstractPage openPageAtHeaderByName(WebDriver driver, String pageName) {
 		waitForElementClickable(driver, AbstractPageUI.HEADER_LINK, pageName);
 		clickToElement(driver, AbstractPageUI.HEADER_LINK, pageName);
@@ -455,12 +443,20 @@ public class AbstractPage {
 		}
 		
 	}
+	public Set<Cookie> getAllCookies(WebDriver driver) {
+		return driver.manage().getCookies();
+	}
+	public void setCookies(WebDriver driver, Set<Cookie> cookies) {
+		for (Cookie cookie: cookies) {
+			driver.manage().addCookie(cookie);
+		}
+	}
 	public void overrideGlobalTimeout(WebDriver driver, long timeOut) {
 		driver.manage().timeouts().implicitlyWait(timeOut, TimeUnit.SECONDS);
 	}
 	protected int longTimeout=30;
 	protected int shortTimeout=10;
-	public int getRandomNumber() {
+	public static int getRandomNumber() {
 		Random rand=new Random();
 		return rand.nextInt(9999);
 	}

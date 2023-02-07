@@ -19,7 +19,14 @@ import baseObject.PageGeneratorManager;
 import baseObject.ProductReviewObject;
 import baseObject.RegisterPageObject;
 import basePage.BaseTest;
-
+import commons.Common_01_RegisterToSystem;
+import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+@Epic("Regression Tests")
+@Feature("My Account Tests")
 public class User_03_My_Account extends BaseTest {
 	private WebDriver driver;
 	private String firstName, lastName, password;
@@ -37,26 +44,21 @@ public class User_03_My_Account extends BaseTest {
 	@BeforeClass
 	public void beforeClass(String browserName) {
 		driver= getBrowserDriver(browserName);
-		firstName= "Steve";
-		lastName="Job";
-		password="123123";
-		firstNameUpdate="Automation";
-		lastNameUpdate="FC";
-		emailUpdate="automationfc.vn@gmail.com";
-		companyName="Automation FC";
-		newPassword="123456";
-		productName="Build your own computer";
-		homepage= PageGeneratorManager.openHomePage(driver);
-		registerpage=(RegisterPageObject) homepage.openPageAtHeaderByName(driver, "ico-register");
-		registerpage.sendKeyToFirstname(firstName);
-		  registerpage.sendKeyToLastname(lastName);
-		  registerpage.sendKeyToEmail(registerpage.email);
-		  registerpage.sendKeyToPassword(password);
-		  registerpage.sendKeyToConfirmationPassword(password);
-		  registerpage.clickToRegisterButton();
-		  Assert.assertEquals(registerpage.getRegistrationResultMessage(), "Your registration completed");
-		  myaccountpage=(MyAccountObject) registerpage.openPageAtHeaderByName(driver, "ico-account");
+		homepage=PageGeneratorManager.openHomePage(driver);
+		
+		log.info("Login - Step 01: Navigate to Login page");
+		loginpage=(LoginPageObject) homepage.openPageAtHeaderByName(driver, "ico-login");
+		
+		log.info("Login - Step 02: Set cookie and reload page");
+		loginpage.setCookies(driver, Common_01_RegisterToSystem.loggedCookie);
+		loginpage.refreshPage(driver);
+		
+		log.info("Login - Step 03: Open My Account page");
+		myaccountpage=(MyAccountObject) registerpage.openPageAtHeaderByName(driver, "ico-account");
 	}
+	@Description("Update account with valid data")
+	@Severity(SeverityLevel.CRITICAL)
+	@Test
 	public void My_Acc_01_Update_Success() {
 		String dateOfBirth="1";
 		String monthOfBirth="1";
@@ -70,13 +72,16 @@ public class User_03_My_Account extends BaseTest {
 		customerpage.sendKeyToEmail(emailUpdate);
 		customerpage.sendKeyToCompanyName(companyName);
 		customerpage.clickToSaveButton();
-		Assert.assertEquals(customerpage.getFirstNameAttribute("value"), firstNameUpdate);
-		Assert.assertEquals(customerpage.getLastNameAttribute("value"), lastNameUpdate);
-		Assert.assertEquals(customerpage.getDateAttribute("value"), dateOfBirth);
-		Assert.assertEquals(customerpage.getMonthAttribute("value"), monthOfBirth);
-		Assert.assertEquals(customerpage.getYearAttribute("value"), yearOfBirth);
-		Assert.assertEquals(customerpage.getCompanyNameAttribute("value"), companyName);
+		verifyEquals(customerpage.getFirstNameAttribute("value"), firstNameUpdate);
+		verifyEquals(customerpage.getLastNameAttribute("value"), lastNameUpdate);
+		verifyEquals(customerpage.getDateAttribute("value"), dateOfBirth);
+		verifyEquals(customerpage.getMonthAttribute("value"), monthOfBirth);
+		verifyEquals(customerpage.getYearAttribute("value"), yearOfBirth);
+		verifyEquals(customerpage.getCompanyNameAttribute("value"), companyName);
 	}
+	@Description("Add address success")
+	@Severity(SeverityLevel.CRITICAL)
+	@Test
 	public void My_Acc_02_Add_Address() {
 		String country="Viet Nam";
 		String city="Hanoi";
@@ -99,16 +104,19 @@ public class User_03_My_Account extends BaseTest {
 		addresspage.sendKeyToPhoneNumber(phoneNumber);
 		addresspage.sendKeyToFaxNumber(faxNumber);
 		addresspage.clickToSaveAddressButton();
-		Assert.assertEquals(addresspage.getNameText(), firstNameUpdate+" "+lastNameUpdate);
-		Assert.assertTrue(addresspage.getEmailUpdate().contains(emailUpdate));
-		Assert.assertTrue(addresspage.getPhoneNumber().contains(phoneNumber));
-		Assert.assertTrue(addresspage.getFaxNumber().contains(faxNumber));
-		Assert.assertEquals(addresspage.getcompanyName(), companyName);
-		Assert.assertEquals(addresspage.getAddress1Update(), address1);
-		Assert.assertEquals(addresspage.getAddress2Update(), address2);
-		Assert.assertEquals(addresspage.getCityPostalCodeText(), city+", "+postalCode);
-		Assert.assertEquals(addresspage.getCountry(), country);
+		verifyEquals(addresspage.getNameText(), firstNameUpdate+" "+lastNameUpdate);
+		verifyTrue(addresspage.getEmailUpdate().contains(emailUpdate));
+		verifyTrue(addresspage.getPhoneNumber().contains(phoneNumber));
+		verifyTrue(addresspage.getFaxNumber().contains(faxNumber));
+		verifyEquals(addresspage.getcompanyName(), companyName);
+		verifyEquals(addresspage.getAddress1Update(), address1);
+		verifyEquals(addresspage.getAddress2Update(), address2);
+		verifyEquals(addresspage.getCityPostalCodeText(), city+", "+postalCode);
+		verifyEquals(addresspage.getCountry(), country);
 	}
+	@Description("Change password success")
+	@Severity(SeverityLevel.CRITICAL)
+	@Test
 	public void My_Acc_03_Change_Password() {
 		changePasswordPage=(ChangePasswordPageObject)addresspage.openPageAtMyAccountByName(driver, "change-password inactive");
 		changePasswordPage.sendKeyToOldPassword(password);
@@ -121,11 +129,11 @@ public class User_03_My_Account extends BaseTest {
 		loginpage.sendKeyToEmail(emailUpdate);
 		loginpage.sendKeyToPassword(password);
 		loginpage.clickToLoginButton();
-		Assert.assertTrue(loginpage.getValidationMessage().contains("The credentials provided are incorrect"));
+		verifyTrue(loginpage.getValidationMessage().contains("The credentials provided are incorrect"));
 		loginpage.sendKeyToEmail(emailUpdate);
 		loginpage.sendKeyToPassword(newPassword);
 		loginpage.clickToLoginButton();
-		Assert.assertTrue(homepage.MyAccountLinkDisplayed());
+		verifyTrue(homepage.MyAccountLinkDisplayed());
 	}
 	public void My_Acc_04_My_Product_Review() {
 		String reviewTitle="Ok";
@@ -138,11 +146,11 @@ public class User_03_My_Account extends BaseTest {
 		productReview.clickToSubmitButton();
 		myaccountpage=(MyAccountObject) productReview.openPageAtHeaderByName(driver, "ico-account");
 		myProductReviewPage=(MyProductReviewPageObject)myaccountpage.openPageAtMyAccountByName(driver, "customer-reviews inactive");
-		Assert.assertEquals(myProductReviewPage.getReviewTitle(), reviewTitle);
-		Assert.assertEquals(myProductReviewPage.getReviewText(), reviewText);
+		verifyEquals(myProductReviewPage.getReviewTitle(), reviewTitle);
+		verifyEquals(myProductReviewPage.getReviewText(), reviewText);
 	}
 	@AfterClass
 	public void afterClass() {
-		driver.quit();
+		closeBrowserDriver();
 	}
 }

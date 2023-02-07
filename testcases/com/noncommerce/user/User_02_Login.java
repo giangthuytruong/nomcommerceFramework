@@ -13,6 +13,7 @@ import baseObject.LoginPageObject;
 import baseObject.PageGeneratorManager;
 import baseObject.RegisterPageObject;
 import basePage.BaseTest;
+import commons.Common_01_RegisterToSystem;
 
 public class User_02_Login extends BaseTest{
 	private WebDriver driver;
@@ -24,21 +25,16 @@ public class User_02_Login extends BaseTest{
 	@BeforeClass
 	public void beforeClass(String browserName) {
 		driver= getBrowserDriver(browserName);
-		firstName= "Steve";
-		lastName="Job";
-		password="123123";
-		homepage= PageGeneratorManager.openHomePage(driver);
-		email="automationfc"+homepage.getRandomNumber()+"@gmail.com";
-		registerpage=(RegisterPageObject) homepage.openPageAtHeaderByName(driver, "ico-register");
-		registerpage= new RegisterPageObject(driver);
-		registerpage.sendKeyToFirstname(firstName);
-		  registerpage.sendKeyToLastname(lastName);
-		  registerpage.sendKeyToEmail(email);
-		  registerpage.sendKeyToPassword(password);
-		  registerpage.sendKeyToConfirmationPassword(password);
-		  registerpage.clickToRegisterButton();
-		  Assert.assertEquals(registerpage.getRegistrationResultMessage(), "Your registration completed");
-		  homepage=(HomePageObject) registerpage.openPageAtHeaderByName(driver, "ico-logout");
+		homepage=PageGeneratorManager.openHomePage(driver);
+		
+		
+		log.info("Login - Step 01: Navigate to Login page");
+		loginpage=(LoginPageObject) homepage.openPageAtHeaderByName(driver, "ico-login");
+		
+		log.info("Login - Step 02: Set cookie and reload page");
+		loginpage.setCookies(driver, Common_01_RegisterToSystem.loggedCookie);
+		loginpage.refreshPage(driver);
+		
 	}
 	@Test
 	public void Log_01_Empty_Data() {
